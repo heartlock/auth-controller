@@ -8,9 +8,9 @@ import (
 	"os/signal"
 	"syscall"
 
+	"github.com/heartlock/auth-controller/pkg/rbacmanager"
+	"github.com/heartlock/auth-controller/pkg/tenant"
 	"golang.org/x/sync/errgroup"
-	"k8s.io/kubernetes/contrib/auth-controller/pkg/rbacmanager"
-	"k8s.io/kubernetes/contrib/auth-controller/pkg/tenant"
 
 	"github.com/go-kit/kit/log"
 )

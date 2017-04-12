@@ -5,10 +5,10 @@ import (
 	"strings"
 	"time"
 
-	"k8s.io/kubernetes/contrib/auth-controller/pkg/client/auth/v1alpha1"
-	"k8s.io/kubernetes/contrib/auth-controller/pkg/k8sutil"
-	"k8s.io/kubernetes/contrib/auth-controller/pkg/openstack"
-	"k8s.io/kubernetes/contrib/auth-controller/pkg/rbacmanager/rbac"
+	"github.com/heartlock/auth-controller/pkg/client/auth/v1alpha1"
+	"github.com/heartlock/auth-controller/pkg/k8sutil"
+	"github.com/heartlock/auth-controller/pkg/openstack"
+	"github.com/heartlock/auth-controller/pkg/rbacmanager/rbac"
 
 	"github.com/go-kit/kit/log"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
@@ -292,10 +292,10 @@ func (c *TenantController) syncTenant(tenant *v1alpha1.Tenant) error {
 	if err != nil && !apierrors.IsAlreadyExists(err) {
 		return fmt.Errorf("create ClusterRoleBinding for tenant: %v failed", tenant.Name)
 	}
-	err = osclient.CreateTenant(tenant.Name)
-	if err != nil {
+	//err = osclient.CreateTenant(tenant.Name)
+	//if err != nil {
 
-	}
+	//}
 	return nil
 }
 

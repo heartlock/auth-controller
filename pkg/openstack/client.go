@@ -53,7 +53,7 @@ func NewClient(config string) (*Client, error) {
 	}
 
 	client := &Client{
-		Identity: identityV2,
+		IdentityV2: identityV2,
 		Provider:   provider,
 	}
 	return client, nil

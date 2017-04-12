@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	"k8s.io/kubernetes/contrib/auth-controller/pkg/k8sutil"
-	"k8s.io/kubernetes/contrib/auth-controller/pkg/rbacmanager/rbac"
-	"k8s.io/kubernetes/contrib/auth-controller/pkg/tenant"
+	"github.com/heartlock/auth-controller/pkg/k8sutil"
+	"github.com/heartlock/auth-controller/pkg/rbacmanager/rbac"
+	"github.com/heartlock/auth-controller/pkg/tenant"
 
 	"github.com/go-kit/kit/log"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
